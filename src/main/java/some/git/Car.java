@@ -16,7 +16,7 @@ public class Car implements Vehicle {
     @Override
     public int getNumberOfTires() {
         LOGGER.info("Counting the number of tires: {}", numberOfTires);
-        return 4; //FIXME: use numberOfTires
+        return 8; //FIXME: use numberOfTires
     }
 
     @Override
