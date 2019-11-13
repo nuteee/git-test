@@ -15,7 +15,7 @@ public class Car implements Vehicle {
 
     @Override
     public int getNumberOfTires() {
-        return numberOfTires;
+        return 4; //FIXME: use numberOfTires
     }
 
     @Override
