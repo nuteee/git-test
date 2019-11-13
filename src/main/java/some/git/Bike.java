@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Bike implements Vehicle {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(Bike.class);
     private static final String MOVE_MESSAGE = "I'M A BIKE";
     private final int numberOfTires;
@@ -14,6 +15,7 @@ public class Bike implements Vehicle {
 
     @Override
     public int getNumberOfTires() {
+        LOGGER.info("Counting the number of tires: {}", numberOfTires);
         return numberOfTires;
     }
 
