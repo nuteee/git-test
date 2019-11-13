@@ -16,7 +16,6 @@ public class Car implements Vehicle {
     @Override
     public int getNumberOfTires() {
         LOGGER.info("Counting the number of tires: {}", numberOfTires);
-        LOGGER.info("Counting the number of tires: {}", numberOfTires);
         return numberOfTires;
     }
 
