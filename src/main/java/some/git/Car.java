@@ -7,7 +7,7 @@ public class Car implements Vehicle {
     private static final Logger LOGGER = LoggerFactory.getLogger(Car.class);
 
     private final int numberOfTires;
-    static final String MOVE_MESSAGE = "WROOM WROOM I'M A CAR";
+    private static final String MOVE_MESSAGE = "WROOM WROOM I'M A CAR";
 
     public Car(int numberOfTires) {
         this.numberOfTires = numberOfTires;
@@ -15,7 +15,8 @@ public class Car implements Vehicle {
 
     @Override
     public int getNumberOfTires() {
-        return 4; //FIXME: use numberOfTires
+        LOGGER.info("Counting the number of tires: {}", numberOfTires);
+        return 8; //FIXME: use numberOfTires
     }
 
     @Override
